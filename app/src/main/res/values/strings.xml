@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyFirstFrame</string>
+    <string name="can_not_find_version_name">找不到版本号</string>
+
+
+    <!-- 响应码 -->
+    <string name="middle_30030">卡号不存在</string>
+    <string name="middle_30031">卡状态不正常</string>
+    <string name="middle_30032">查询问题列表失败</string>
+    <string name="middle_30033">设置安保问题失败</string>
+    <string name="middle_30034">查询不到安保问题</string>
+    <string name="middle_30035">安保问题查询失败</string>
+    <string name="middle_30036">密保问题1校验失败</string>
+    <string name="middle_30037">密保问题2校验失败</string>
+    <string name="middle_30038">密保问题3校验失败</string>
+    <string name="middle_30039">上行短信校验失败</string>
+</resources>
