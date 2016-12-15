@@ -4,7 +4,9 @@ import android.app.Application;
 import android.content.Context;
 import android.support.v7.app.AppCompatDelegate;
 
-import org.greenrobot.eventbus.EventBus;
+import com.epaylinks.myfirstframe.R;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 
 /**
@@ -27,7 +29,8 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
         mAppContext = getApplicationContext();
-
+        //字体库的变换
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder().setDefaultFontPath("font/Roboto-RobotoRegular.ttf").setFontAttrId(R.attr.fontPath).build());
 
         /**
          * 如果存在SD卡则将缓存写入SD卡,否则写入手机内存

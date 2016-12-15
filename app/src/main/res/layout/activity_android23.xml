@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="center_horizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/a"
+        android:scaleType="fitXY"
+        app:fabSize="auto"
+        app:elevation="@dimen/width_6dp"
+        app:backgroundTint="@color/colorPrimary"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edt_input_yout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nomal EditText"/>
+    <EditText
+        android:id="@+id/edt_input_yout_email_nomal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入邮箱"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_fab_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_cop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:fabSize="normal"
+            app:elevation="@dimen/width_6dp"/>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

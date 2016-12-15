@@ -38,6 +38,19 @@
         <activity
             android:name="com.epaylinks.myfirstframe.ui.RecyclerViewActivity"
             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.epaylinks.myfirstframe.ui.TextSizeWholeSet"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.epaylinks.myfirstframe.wedigitview.CoordinateLayoutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.epaylinks.myfirstframe.wedigitview.Android23StudyActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

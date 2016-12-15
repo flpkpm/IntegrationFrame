@@ -9,6 +9,23 @@
         <!--<item name="android:listDivider">@drawable/list_diliver</item>-->
     </style>
 
+    <style name="small_textStyle" parent="AppTheme">
+        <item name="textSizeTextView">@dimen/textSize_11sp</item>
+        <item name="textSizeButtom">@dimen/textSize_20sp</item>
+    </style>
+    <style name="default_textStyle" parent="AppTheme">
+    </style>
+    <style name="big_textStyle" parent="AppTheme">
+        <item name="textSizeTextView">@dimen/textSize_30sp</item>
+        <item name="textSizeButtom">@dimen/textSize_60sp</item>
+    </style>
+    <style name="another_textStyle" parent="AppTheme">
+        <item name="textSizeTextView">100sp</item>
+    </style>
+
+
+
+
 
 
 </resources>

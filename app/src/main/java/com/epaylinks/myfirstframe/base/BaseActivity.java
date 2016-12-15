@@ -5,17 +5,27 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import org.greenrobot.eventbus.EventBus;
+import com.epaylinks.myfirstframe.R;
+
 
 /**
  * Created by Administrator on 2016/11/7.
  */
 
 public abstract class BaseActivity extends AppCompatActivity{
-
+    protected static  int state=0;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //其实图片也应该相应改变,注意可以设置多个主题属性
+        switch (state){
+            case 0:
+                setTheme(R.style.big_textStyle);
+                break;
+            case 1:
+                setTheme(R.style.small_textStyle);
+                break;
+        }
         setUpContentView();
         setUpView();
         setUpData();
@@ -23,11 +33,16 @@ public abstract class BaseActivity extends AppCompatActivity{
     }
 
     protected abstract void setUpView();
-    protected abstract void setUpData();
+    protected  void setUpData(){};
     protected abstract void setUpContentView();
 
     public void setContentView(int id){
         super.setContentView(id);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 
     /**

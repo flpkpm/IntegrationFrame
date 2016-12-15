@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyFirstFrame.iml" filepath="$PROJECT_DIR$/MyFirstFrame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntegrationFrame.iml" filepath="$PROJECT_DIR$/IntegrationFrame.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/myokhttp/myokhttp.iml" filepath="$PROJECT_DIR$/myokhttp/myokhttp.iml" />
     </modules>
