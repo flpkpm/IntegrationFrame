@@ -47,17 +47,28 @@
         <activity
             android:name="com.epaylinks.myfirstframe.wedigitview.CoordinateLayoutActivity"
             android:screenOrientation="portrait">
+
         </activity>
         <activity
             android:name="com.epaylinks.myfirstframe.wedigitview.Android23StudyActivity"
             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.epaylinks.myfirstframe.wedigitview.Android23NavigationMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme">
+        </activity>
+
+        <activity
+            android:name="com.epaylinks.myfirstframe.ui.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

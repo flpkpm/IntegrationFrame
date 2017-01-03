@@ -14,4 +14,8 @@
     <string name="middle_30037">密保问题2校验失败</string>
     <string name="middle_30038">密保问题3校验失败</string>
     <string name="middle_30039">上行短信校验失败</string>
+
+    <!--左侧菜单栏-->
+    <string name="menu_item_weather">新闻</string>
+
 </resources>

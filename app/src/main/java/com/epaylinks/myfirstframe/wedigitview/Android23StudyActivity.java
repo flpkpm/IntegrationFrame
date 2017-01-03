@@ -13,6 +13,9 @@ import android.widget.Toast;
 import com.epaylinks.myfirstframe.R;
 import com.epaylinks.myfirstframe.base.BaseActivity;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Created by Administrator on 2016/12/15.
  */
@@ -71,6 +74,11 @@ public class Android23StudyActivity extends BaseActivity {
                 if(charSequence.length()>10){
                     edt_input_yout_email_nomal.setError("你输入的文字太长了");
                 }
+                StringBuffer sb=new StringBuffer(charSequence);
+                if(isEmoji(sb.toString())){
+                    edt_input_yout_email_nomal.setError("表情包："+sb.toString());
+                }
+
             }
 
             @Override
@@ -78,6 +86,7 @@ public class Android23StudyActivity extends BaseActivity {
 
             }
         });
+
 
         //coordinatelayout
         cl_fab_container = (CoordinatorLayout) findViewById(R.id.cl_fab_container);
@@ -112,11 +121,19 @@ public class Android23StudyActivity extends BaseActivity {
                 snackbar.show();
             }
         });
+
     }
 
     @Override
     protected void setUpContentView() {
         setContentView(R.layout.activity_android23);
 
+    }
+
+    public static boolean isEmoji(String str) {
+        String regEx="[\ud83c\udc00-\ud83c\udfff]|[\ud83d\udc00-\ud83d\udfff]|[\u2600-\u27ff]";
+        Pattern p = Pattern.compile(regEx);
+        Matcher m = p.matcher(str);
+        return m.find();
     }
 }

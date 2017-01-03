@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.epaylinks.myfirstframe.R;
-
 
 /**
  * Created by Administrator on 2016/11/7.
@@ -17,15 +15,15 @@ public abstract class BaseActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //其实图片也应该相应改变,注意可以设置多个主题属性
-        switch (state){
-            case 0:
-                setTheme(R.style.big_textStyle);
-                break;
-            case 1:
-                setTheme(R.style.small_textStyle);
-                break;
-        }
+//        //其实图片也应该相应改变,注意可以设置多个主题属性
+//        switch (state){
+//            case 0:
+//                setTheme(R.style.big_textStyle);
+//                break;
+//            case 1:
+//                setTheme(R.style.small_textStyle);
+//                break;
+//        }
         setUpContentView();
         setUpView();
         setUpData();

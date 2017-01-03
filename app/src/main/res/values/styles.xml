@@ -9,6 +9,12 @@
         <!--<item name="android:listDivider">@drawable/list_diliver</item>-->
     </style>
 
+    <style name="BaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
     <style name="small_textStyle" parent="AppTheme">
         <item name="textSizeTextView">@dimen/textSize_11sp</item>
         <item name="textSizeButtom">@dimen/textSize_20sp</item>
